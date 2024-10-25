@@ -3,9 +3,9 @@ import myBg from '../../assets/images/bg-shadow.png'
 const Footer = () => {
     return (
        <div className="relative">
-        <div className="p-6 rounded-xl w-[80%] absolute left-[10%] bottom-[75%]  border-2">
+        <div className="p-6 bg-blur rounded-xl w-[80%] absolute left-[10%] bottom-[70%]  border-2">
             <div className="">
-            <div className=" rounded-xl border-2 mx-auto bg-cover bg-no-repeat " style={{ backgroundImage: `url(${myBg})` }}>
+            <div className="bg-white rounded-xl border-2 py-10 mx-auto bg-cover bg-no-repeat " style={{ backgroundImage: `url(${myBg})` }}>
   <div className="hero-content text-center">
     <div className="max-w-md">
       <h1 className="text-5xl font-bold">Subscribe to our Newsletter</h1>
@@ -26,7 +26,7 @@ const Footer = () => {
 
         </div>
         <div className="bg-slate-900 pt-40">
-            <div className="mx-auto w-[80%]">
+            <div className="mx-auto mt-20 w-[80%]">
                 <div className="flex justify-center"><img src={FooterLogo} alt="" /></div>
             <footer className="flex justify-between footer  text-white p-10">
             <nav>

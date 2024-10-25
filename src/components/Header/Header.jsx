@@ -1,6 +1,7 @@
 import Logo from '../../assets/images/logo.png'
 import Coin from '../../assets/images/coin.png'
-const Header = () => {
+import PropTypes from 'prop-types';
+const Header = ({ addcoin}) => {
     return (
       <div className='md:container mx-auto py-10'>
           <div className='mx-auto w-[80%]'>
@@ -18,7 +19,7 @@ const Header = () => {
       <li><a>Schedules</a></li>
     </ul>
   </div>
-    <a className="btn text-xl">0 Coin <img src={Coin} alt="" /></a>
+    <a className="btn text-xl"><span>{addcoin.toLocaleString()}</span> Coin <img src={Coin} alt="" /></a>
   </div>
 </div>
       </div>
@@ -26,5 +27,9 @@ const Header = () => {
     
     );
   };
+  Header.propTypes = {
+    addcoin: PropTypes.object.isRequired,
+    handleAddCoin: PropTypes.func.isRequired
   
+  }
   export default Header;
