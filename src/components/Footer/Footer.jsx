@@ -3,12 +3,12 @@ import myBg from '../../assets/images/bg-shadow.png'
 const Footer = () => {
     return (
        <div className="relative">
-        <div className="p-6 bg-blur rounded-xl lg:w-[80%] absolute left-0 md:left-[15%] lg:left-[10%] lg:bottom-[70%] bottom-[77%] border-2">
+        <div className="p-6 bg-blur rounded-xl w-[95%] lg:w-[80%] absolute left-0 md:left-[2%] lg:left-[10%] lg:bottom-[70%] bottom-[77%] border-2">
             <div className="">
             <div className="bg-white rounded-xl border-2 py-5 lg:py-10 mx-auto bg-cover bg-no-repeat " style={{ backgroundImage: `url(${myBg})` }}>
   <div className="hero-content text-center">
     <div className="max-w-md">
-      <h1 className="text-5xl font-bold">Subscribe to our Newsletter</h1>
+      <h1 className="lg:text-5xl text-3xl font-bold">Subscribe to our Newsletter</h1>
       <p className="py-6">
       Get the latest updates and news right in your inbox!
       </p>

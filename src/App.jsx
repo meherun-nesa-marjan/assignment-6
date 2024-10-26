@@ -1,5 +1,6 @@
 import './App.css'
 import 'react-toastify/dist/ReactToastify.css';
+import { toast } from 'react-toastify'; 
 import Header from './components/Header/Header'
 import Bannar from './components/Bannar/Bannar'
 import Cards from './components/Cards/Cards'
@@ -36,6 +37,7 @@ function App() {
  
   const handleAddCoin = () => {
     setAddcoin(prevCoins => prevCoins + 90000);
+    toast.success("coins added successfully!");
   };
   const handleRemoveCoins = (price) => {
     setAddcoin(prevCoins => prevCoins - price);

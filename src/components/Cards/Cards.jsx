@@ -35,6 +35,7 @@ const Cards = ({handleIsActive, isActive, handleRemoveCoins, addcoin}) => {
     const handleRemovePlayer = (playerId) => {
       const updatedPlayers = Addplayers.filter(player => player.id !== playerId);
       setAddplayers(updatedPlayers);
+      toast.error("remove player successfully!");
   };
  
     
