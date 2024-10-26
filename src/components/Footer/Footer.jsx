@@ -3,9 +3,9 @@ import myBg from '../../assets/images/bg-shadow.png'
 const Footer = () => {
     return (
        <div className="relative">
-        <div className="p-6 bg-blur rounded-xl w-[80%] absolute left-[10%] bottom-[70%]  border-2">
+        <div className="p-6 bg-blur rounded-xl lg:w-[80%] absolute left-0 md:left-[15%] lg:left-[10%] lg:bottom-[70%] bottom-[77%] border-2">
             <div className="">
-            <div className="bg-white rounded-xl border-2 py-10 mx-auto bg-cover bg-no-repeat " style={{ backgroundImage: `url(${myBg})` }}>
+            <div className="bg-white rounded-xl border-2 py-5 lg:py-10 mx-auto bg-cover bg-no-repeat " style={{ backgroundImage: `url(${myBg})` }}>
   <div className="hero-content text-center">
     <div className="max-w-md">
       <h1 className="text-5xl font-bold">Subscribe to our Newsletter</h1>
@@ -16,8 +16,8 @@ const Footer = () => {
       <input
         type="text"
         placeholder="Enter your email"
-        className="input input-bordered " />
-      <button className="btn bg-[#fce8c5] ">Subscribe</button>
+        className="input input-bordered lg:mb-0 mb-5" />
+      <button className="btn lg:w-fit bg-[#fce8c5] ">Subscribe</button>
     </div>
     </div>
   </div>
@@ -25,10 +25,10 @@ const Footer = () => {
             </div>
 
         </div>
-        <div className="bg-slate-900 pt-40">
-            <div className="mx-auto mt-20 w-[80%]">
+        <div className="bg-slate-900 w-full pt-40">
+            <div className="lg:mx-auto mt-20 lg:w-[80%]">
                 <div className="flex justify-center"><img src={FooterLogo} alt="" /></div>
-            <footer className="flex justify-between footer  text-white p-10">
+            <footer className="lg:flex justify-between footer  text-white p-10">
             <nav>
   <nav>
   <h6 className="footer-title text-white">About Us</h6>
@@ -48,16 +48,16 @@ const Footer = () => {
   <nav>
   <form>
   <h6 className="footer-title text-white">Subscribe</h6>
-  <fieldset className="form-control w-80">
+  <fieldset className="form-control">
     <label className="label">
       <span className="label-text text-white">Subscribe to our newsletter for the latest updates.</span>
     </label>
-    <div className="join">
+    <div className="">
       <input
         type="text"
         placeholder="Enter your email"
         className="input input-bordered join-item" />
-      <button className="btn bg-[#fce8c5] join-item">Subscribe</button>
+      <button className="btn bg-[#fce8c5] mt-4  lg:w-fit  lg:mt-0 join-item">Subscribe</button>
     </div>
   </fieldset>
 </form>

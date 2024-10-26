@@ -5,7 +5,7 @@ const Card = ({card, handleAddplayer}) => {
    
     return (
         <div>
-            <div className="card card-compact bg-base-100 w-96 shadow-xl">
+            <div className="card m-5 md:m-0 card-compact bg-base-100 w-fitt shadow-xl">
   <figure className='p-5'>
     <img className='rounded-lg'
       src={img}

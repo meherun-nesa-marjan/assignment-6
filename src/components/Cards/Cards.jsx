@@ -40,7 +40,7 @@ const Cards = ({handleIsActive, isActive, handleRemoveCoins, addcoin}) => {
     
     return (
 
-      <div className="w-[80%] mx-auto mb-64 my-10">
+      <div className="lg:w-[80%] mx-auto mb-64 my-10">
             <ToastContainer 
                 position="top-right" 
                 autoClose={3000} 
@@ -50,17 +50,17 @@ const Cards = ({handleIsActive, isActive, handleRemoveCoins, addcoin}) => {
                 draggable 
                 pauseOnFocusLoss 
             />
-        <div className="my-7 flex justify-between">
+        <div className="my-7 mx-2 lg:flex justify-between">
           <h2 className="text-lg font-semibold">Available Players</h2>
-        <div className="">
+        <div className="mt-4 lg:mt-0">
         <button onClick={() => handleIsActive("available")} className={`${isActive.available?"btn bg-[#fce8c5]":"btn"}`}>available</button>
-        <button onClick={() => handleIsActive("select")} className={`${isActive.available?"btn":"btn bg-[#fce8c5]"}`}>select</button>
+        <button onClick={() => handleIsActive("select")} className={`${isActive.available?"btn":"btn bg-[#fce8c5]"}`}>select({Addplayers.length})</button>
         </div>
         </div>
         <div className="">
         {
   isActive.available ? (
-    <div className="grid grid-cols-3 gap-4">
+    <div className="md:grid md:grid-cols-2 md:px-5 lg:grid-cols-3 gap-4">
       {cards.map(card => (
         <Card
           key={card.id}
@@ -73,7 +73,7 @@ const Cards = ({handleIsActive, isActive, handleRemoveCoins, addcoin}) => {
   ) : (
     <div className="">
       {
-        <AddPlayer Addplayers={Addplayers} handleRemovePlayer={handleRemovePlayer}  handleIsActive={ handleIsActive}  />
+        <AddPlayer Addplayers={Addplayers} handleRemovePlayer={handleRemovePlayer}  handleIsActive={handleIsActive}  />
       }
     </div>
   )
