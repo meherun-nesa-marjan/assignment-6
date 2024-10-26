@@ -16,16 +16,16 @@ const Cards = ({handleIsActive, isActive, handleRemoveCoins, addcoin}) => {
     const handleAddplayer = (card)=>{
       const isExist = Addplayers.find(prevAddplayers =>prevAddplayers.id === card.id)
       if (isExist) {
-        toast.warning('Player already added!');
+        toast.warning(`${card.name} is already added!`);
       } else if (Addplayers.length >= 6) {
         toast.error('Maximum of 6 players can be selected!');
       } else if (addcoin < card.price) {
-        toast.error("Not enough coins to add this player!");
+        toast.error(`Not enough coins to add ${card.name}!`);
       } else {
         setAddplayers(prev => {
           if (!prev.find(player => player.id === card.id)) {
             handleRemoveCoins(card.price);
-            toast.success('Player added successfully!');
+            toast.success(`${card.name} added successfully!`);
             return [...prev, card];
           }
           return prev;
@@ -33,10 +33,15 @@ const Cards = ({handleIsActive, isActive, handleRemoveCoins, addcoin}) => {
       }
     }
     const handleRemovePlayer = (playerId) => {
+      const playerToRemove = Addplayers.find(player => player.id === playerId);
       const updatedPlayers = Addplayers.filter(player => player.id !== playerId);
       setAddplayers(updatedPlayers);
-      toast.error("remove player successfully!");
-  };
+      if (playerToRemove) {
+        toast.error(`${playerToRemove.name} removed successfully!`);
+      }
+    };
+    
+  
  
     
     return (
