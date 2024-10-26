@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const Card = ({card, handleAddPlayer}) => {
+const Card = ({card, handleAddplayer}) => {
     const {name,img,team,role,age,runs,price} = card
    
     return (
@@ -9,7 +9,7 @@ const Card = ({card, handleAddPlayer}) => {
   <figure className='p-5'>
     <img className='rounded-lg'
       src={img}
-      alt="Shoes" />
+      alt="player" />
   </figure>
   <div className="card-body">
     <h2 className="card-title"><i className="fa-solid fa-user"></i>{name}</h2>
@@ -24,7 +24,16 @@ const Card = ({card, handleAddPlayer}) => {
         </div>
     <div className="card-actions my-3">
        <p>Price:$ {price}</p>
-      <button onClick={() => handleAddPlayer(card)} className="btn">Choose Player</button>
+       <button 
+  onClick={() => {
+    handleAddplayer(card);
+   
+         }} 
+        className="btn">
+         Choose Player
+    </button>
+       
+    
     </div>
   </div>
 </div>
@@ -32,7 +41,9 @@ const Card = ({card, handleAddPlayer}) => {
     );
 };
 Card.propTypes = {
-    card: PropTypes.object.isRequired,
-    handleAddPlayer: PropTypes.func
-}
+  card: PropTypes.object.isRequired,
+  handleAddplayer: PropTypes.func.isRequired, 
+  handleRemoveCoins:PropTypes.func
+};
+
 export default Card;

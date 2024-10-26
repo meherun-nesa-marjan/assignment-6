@@ -6,7 +6,7 @@
       "role": "Batsman",
       "runs": 12000,
       "team": "India",
-      "price": 120000000,
+      "price": 12000,
       "img": "https://i.ibb.co.com/CPqgNzy/cricket-match-with-player-1.jpg"
     },
     {
@@ -16,7 +16,7 @@
       "role": "Bowler",
       "runs": 500,
       "team": "Australia",
-      "price": 150000000,
+      "price": 15000,
       "img": "https://i.ibb.co.com/0jtfwp0/cricket-match-with-player-2.jpg"
     },
     {
@@ -26,7 +26,7 @@
       "role": "Batsman",
       "runs": 9500,
       "team": "England",
-      "price": 100000000,
+      "price": 10000,
       "img": "https://i.ibb.co.com/7R77hc8/cricket-match-with-player.jpg"
     },
     {
@@ -36,7 +36,7 @@
       "role": "Batsman",
       "runs": 8000,
       "team": "New Zealand",
-      "price": 110000000,
+      "price": 11000,
       "img": "https://i.ibb.co.com/dp1cfTG/portrait-person-playing-cricket-sport-1.jpg"
     },
     {
@@ -46,7 +46,7 @@
       "role": "Bowler",
       "runs": 200,
       "team": "India",
-      "price": 130000000,
+      "price": 13000,
       "img": "https://i.ibb.co.com/b62DL5c/portrait-person-playing-cricket-sport.jpg"
     },
     {
@@ -56,7 +56,7 @@
       "role": "All-Rounder",
       "runs": 4500,
       "team": "England",
-      "price": 140000000,
+      "price": 14000,
       "img": "https://i.ibb.co.com/CPqgNzy/cricket-match-with-player-1.jpg"
     },
     {
@@ -66,7 +66,7 @@
       "role": "Batsman",
       "runs": 7500,
       "team": "Australia",
-      "price": 100000000,
+      "price": 10000,
       "img": "https://i.ibb.co.com/dp1cfTG/portrait-person-playing-cricket-sport-1.jpg"
     },
     {
@@ -76,7 +76,7 @@
       "role": "Bowler",
       "runs": 300,
       "team": "Pakistan",
-      "price": 120000000,
+      "price": 12000,
       "img": "https://i.ibb.co.com/0jtfwp0/cricket-match-with-player-2.jpg"
     },
     {
@@ -86,7 +86,7 @@
       "role": "Wicketkeeper",
       "runs": 6000,
       "team": "South Africa",
-      "price": 110000000,
+      "price": 11000,
       "img": "https://i.ibb.co.com/b62DL5c/portrait-person-playing-cricket-sport.jpg"
     },
     {
@@ -96,7 +96,7 @@
       "role": "All-Rounder",
       "runs": 6500,
       "team": "Bangladesh",
-      "price": 130000000,
+      "price": 13000,
       "img": "https://i.ibb.co.com/dp1cfTG/portrait-person-playing-cricket-sport-1.jpg"
     },
     {
@@ -106,7 +106,7 @@
       "role": "Batsman",
       "runs": 9000,
       "team": "South Africa",
-      "price": 140000000,
+      "price": 14000,
       "img": "https://i.ibb.co.com/0jtfwp0/cricket-match-with-player-2.jpg"
     },
     {
@@ -116,7 +116,7 @@
       "role": "Batsman",
       "runs": 7500,
       "team": "Pakistan",
-      "price": 125000000,
+      "price": 12500,
       "img": "https://i.ibb.co.com/0jtfwp0/cricket-match-with-player-2.jpg"
     },
     {
@@ -126,7 +126,7 @@
       "role": "Bowler",
       "runs": 600,
       "team": "Afghanistan",
-      "price": 135000000,
+      "price": 13500,
       "img": "https://i.ibb.co.com/dp1cfTG/portrait-person-playing-cricket-sport-1.jpg"
     },
     {
@@ -136,7 +136,7 @@
       "role": "All-Rounder",
       "runs": 3500,
       "team": "India",
-      "price": 125000000,
+      "price": 12500,
       "img": "https://i.ibb.co.com/0jtfwp0/cricket-match-with-player-2.jpg"
     },
     {
@@ -146,7 +146,7 @@
       "role": "All-Rounder",
       "runs": 5000,
       "team": "Australia",
-      "price": 115000000,
+      "price": 11500,
       "img": "https://i.ibb.co.com/b62DL5c/portrait-person-playing-cricket-sport.jpg"
     }
   ]

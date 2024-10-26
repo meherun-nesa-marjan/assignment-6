@@ -1,7 +1,7 @@
 import Logo from '../../assets/images/logo.png'
 import Coin from '../../assets/images/coin.png'
 import PropTypes from 'prop-types';
-const Header = ({ addcoin}) => {
+const Header = ({addcoin}) => {
     return (
       <div className='md:container mx-auto py-10'>
           <div className='mx-auto w-[80%]'>
@@ -28,7 +28,7 @@ const Header = ({ addcoin}) => {
     );
   };
   Header.propTypes = {
-    addcoin: PropTypes.object.isRequired,
+    addcoin: PropTypes.number.isRequired,
     handleAddCoin: PropTypes.func.isRequired
   
   }

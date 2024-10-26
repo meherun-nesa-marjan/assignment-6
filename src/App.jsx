@@ -1,9 +1,13 @@
 import './App.css'
+import 'react-toastify/dist/ReactToastify.css';
 import Header from './components/Header/Header'
 import Bannar from './components/Bannar/Bannar'
 import Cards from './components/Cards/Cards'
 import Footer from './components/Footer/Footer'
 import { useState } from 'react'
+
+
+
 
 function App() {
   const [isActive, setIsActive] = useState({
@@ -26,18 +30,23 @@ function App() {
     }
    
   }
-  console.log(isActive)
   const [addcoin, setAddcoin] = useState(0);
-  const handleAddCoin = () =>{
-    setAddcoin(prevCoins => prevCoins + 600000000);
-  }
-
+  
+ 
+ 
+  const handleAddCoin = () => {
+    setAddcoin(prevCoins => prevCoins + 90000);
+  };
+  const handleRemoveCoins = (price) => {
+    setAddcoin(prevCoins => prevCoins - price);
+};
+ 
   return (
     <>
    
-    <Header addcoin={addcoin}></Header>
+   <Header  addcoin={addcoin}></Header>
     <Bannar handleAddCoin={handleAddCoin}></Bannar>
-    <Cards handleIsActive={handleIsActive} isActive={isActive}></Cards>
+    <Cards handleIsActive={handleIsActive}handleRemoveCoins={handleRemoveCoins} isActive={isActive} addcoin={addcoin}></Cards>
     <Footer></Footer>
    
 
